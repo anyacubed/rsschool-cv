@@ -6,10 +6,6 @@
     left: 50%;
 }
 
-#my-photo {
-    
-}
-
 #logo {
     width: 10%;
 }
@@ -24,15 +20,11 @@ footer {
     justify-content: space-between;
 }
 
-.footer-box-item {
-
-}
-
 #footer-box-item2 {
     text-align: center;
 }
 
-footer div {
+footer section {
     width: 33%;
 }
 
@@ -50,8 +42,10 @@ a:hover li {
 
 body {
     margin: auto;
+    background-color: whitesmoke;
     max-width: 1100px;
     box-shadow: 12px 0 15px -4px rgba(13, 19, 26, 0.5), -12px 0 15px -4px rgba(13, 19, 26, 0.5);
+    font-family: "Alegreya Sans";
 }
 
 #container {
@@ -91,12 +85,10 @@ body {
 }
 
 h1, h2 {
-    font-family: Playfair Display;
     text-align: center;
 }
 
-h3 {
-    font-family: Playfair Display;
+h3, h4 {
     text-align: left;
     margin: 20px;
 }
@@ -111,7 +103,6 @@ ul.education li p {
 }
 
 p {
-    font-family: Playfair Display;
     text-align: left;
     font-size: 18px;
 }
@@ -137,6 +128,10 @@ ul.icons-sum {
     color: black;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 li {
     margin: 20px 20px;
     font-size: 18px;
@@ -148,13 +143,11 @@ li.contact-information {
 }
 
 #contacts {
-    font-family: Playfair Display;
     text-align: center;
 }
 
 #location {
     color: black;
-    font-family: Playfair Display;
     text-align: center;
     font-size: 18px;
 }
@@ -167,40 +160,30 @@ ul.skills-languages li {
     text-align: start;
 }
 
-/* .left h1 {
-    color: white;
-}
-
-.left h2 {
-    color: white;
-} */
-
 .code {
     margin: 20px 120px;
     font-size: 18px;
     text-align: start;
 }
 
-.menu {
-    padding: 15px 40px;
-    color: red;
-}
-
-.menu a {
-    color: black;
-}
-
 .menu a:hover {
     background-color: #ddd;
     color: black;
     font-size: 20px;
-    transition-duration: 0.3s;
+    transition-duration: 0.3;
+}
+
+nav {
+    display: flex;
+    justify-content: end;
+
 }
 
 .navbar {
+    display: flex;
     list-style-type: none;
-    text-align: end;
-    margin: 0px;
+    text-align: start;
+    margin: 20px;
     padding: 0px;
 }
 
@@ -208,6 +191,134 @@ ul.skills-languages li {
     display: inline;
 }
 
+.navbar-item a{
+    color: black;
+}
+
 .header {
     height: 50px; 
+}
+
+.burger {
+    display: none;
+}
+  
+@media (min-width: 0px) and (max-width: 720px) {
+    #container {
+        flex-wrap: wrap;
+        min-height: 100vh;
+        max-width: 400px;
+        display: flex;
+    }
+
+    body {
+        max-width: 320px;
+    }
+
+    h2 {
+        margin: 0;
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+    
+    a:hover {
+        text-decoration: none;
+        transition: none;
+    }
+    a:hover li {
+        text-decoration: none;
+        transition: none;
+        transform: none;
+    }
+
+    
+    .menu a:hover {
+        background-color: #cccccc;
+        color: black;
+        font-size: 14px;
+        transition-duration: 0;
+    }
+
+    li.navbar-item {
+        display: none;
+        margin: 10px 15px 10px 15px;
+        font-size: 14px;
+    }
+
+    .left {
+        flex-basis: 320px;
+    }
+
+    .left-bottom {
+        border-left: 0px;
+        border-right: 0px;
+    }
+
+    .right {
+        width: 320px;
+    }
+
+    .menu {
+        display: inline;
+    }
+
+    .burger {
+        background-color: #cccccc;
+        display: block;
+        padding: 10px 0px 0px 10px;
+    }
+
+    .navbar {
+
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+        margin: 0px;
+        background-color: #cccccc;
+    }
+
+    .code {
+        margin: 0px;
+    }
+
+    ul.education li p {
+        text-align: start;
+        margin: 0px 5px;
+    }
+
+    .footer-box-item ul.icons-sum {
+        list-style-type: none;
+        padding: 0px;
+        margin: 0px 0px;
+        font-size: 5px;
+        display: block;
+        text-align: center;
+    }
+
+    .footer-box {
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+
+    .footer-box-item {
+        width: auto;
+    }
+
+    footer section {
+        width: 50%;
+    }
+
+    .footer-box > section:nth-of-type(1) { 
+        display: none;
+    }
+
+    .footer-box-item ul.icons-sum {
+        list-style-type: none;
+        padding: 0px;
+        display: block;
+        text-align: center;
+    }
 }
