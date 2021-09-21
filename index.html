@@ -22,6 +22,7 @@
                 <li class="navbar-item"><a href="#education">MY EDUCATION</a></li>
                 <li class="navbar-item"><a href="#code">MY CODE</a></li>
                 <li class="navbar-item"><a href="#skills">MY SKILLS</a></li>
+                <li class="navbar-item"><a href="#projects">MY PROJECTS</a></li>
                 <li class="navbar-item"><a href="#languages">LANGUAGES</a></li>
             </ul>
         </nav>
@@ -82,12 +83,12 @@
                 </div>
             </div>
             <div class="right">
-                <div class="box1">
+                <section class="box1">
                     <h2>ABOUT ME</h2>
                     <p id="about-me">I’m a junior frontend developer. I’m super enthusiastic about learning new things in computer science because it makes me feel challenging. After years of learning foreign languages, I made a conclusion that there is not anything really special about them when you don’t use them daily, therefore I decided to master something more applied. So, just in case I feel like becoming Hokage one day, tell Elon Musk to watch out! </p>
-                </div>
+                </section>
                 <hr>
-                <div>
+                <section>
                     <h2 id="education">EDUCATION</h2>
                 <ul class="education">
                     <li>
@@ -105,9 +106,9 @@
                         <p>International volunteering</p>
                     </li>
                 </ul>
-                </div>
+                </section>
                 <hr>
-                <div>
+                <section>
                     <h2 id="code">CODE</h2>
                     <pre class="code"><code class="js">function highAndLow(numbers) {
 var array = numbers.split(" ");
@@ -117,15 +118,24 @@ var b = Math.min(...array);
 return `${a} ${b}`;
 }
                     </code></pre>
-                </div>
+                </section>
+                <hr>
+                <section class="box4">
+                    <h2 id="projects">PROJECTS</h2>
+                    <h3>MY CV</h3>
+                    <p>A short written summary of my qualifications and education with the use of HTML, CSS and JS</p>
+                    <div class="cv-project-container">
+                        <a href="https://anyacubed-cv.netlify.app/" target="_blank"><img src="cv-project.png" class="cv-project" alt="my cv project"></a>
+                    </div>
+                </section>
             </div>
         </main>
         <footer class="footer-box">
-            <section class="footer-box-item"></section>
-            <section class="footer-box-item">
+            <div class="footer-box-item"></div>
+            <div class="footer-box-item">
                 <h5 id="footer-box-item2">© 2021 Anna Artemenko</h5>
-            </section>
-            <section class="footer-box-item">
+            </div>
+            <div class="footer-box-item">
                 <ul class="icons-sum">
                     <li class="contact-information">  
                         <a class="icons" href="https://github.com/anyacubed" target="_blank">
@@ -148,7 +158,7 @@ return `${a} ${b}`;
                         </a>
                     </li>
                 </ul>
-            </section>
+            </div>
         </footer>
     </body>
 </html>

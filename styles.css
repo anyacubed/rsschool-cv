@@ -24,7 +24,7 @@ footer {
     text-align: center;
 }
 
-footer section {
+footer div {
     width: 33%;
 }
 
@@ -93,6 +93,10 @@ h3, h4 {
     margin: 20px;
 }
 
+h5 {
+    font-size: 18px;
+}
+
 ul.education {
     list-style-type: none;
 }
@@ -114,6 +118,15 @@ p {
 
 .box1 {
     margin: 80px 0px 0px 0px;
+}
+
+.box4 p {
+    text-align: center;
+    margin: 20px 85px;
+}
+
+.box4 h3 {
+    text-align: center;
 }
 
 ul.icons-sum {
@@ -164,6 +177,18 @@ ul.skills-languages li {
     margin: 20px 120px;
     font-size: 18px;
     text-align: start;
+}
+
+.cv-project {
+    max-width: 400px;
+    border:rgba(13, 19, 26, 0.5);
+    border-style: double;
+    border-width: 8px;
+}
+
+.cv-project-container {
+    max-width: 400px;
+    margin: 5px auto;
 }
 
 .menu a:hover {
@@ -261,6 +286,23 @@ nav {
         width: 320px;
     }
 
+    .cv-project {
+        max-width: 200px;
+        border:rgba(13, 19, 26, 0.5);
+        border-style: double;
+        border-width: 5px;
+    }
+
+    .cv-project-container {
+        max-width: 200px;
+        margin: 5px auto;
+    }
+
+    .box4 p {
+        text-align: center;
+        margin: 20px 45px;
+    }
+
     .menu {
         display: inline;
     }
@@ -307,11 +349,11 @@ nav {
         width: auto;
     }
 
-    footer section {
+    footer div {
         width: 50%;
     }
 
-    .footer-box > section:nth-of-type(1) { 
+    .footer-box > div:nth-of-type(1) { 
         display: none;
     }
 
