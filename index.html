@@ -1,164 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
-        <title>rss cv</title>
-        <link rel="stylesheet" href="styles.css">
-        <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="highlight/styles/atom-one-dark-reasonable.min.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alegreya+Sans">
-        <script src="/highlight/highlight.min.js"></script>
-        <script>hljs.highlightAll();</script>
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <script src="script.js"></script>
-    </head>
-    <body>
-        <nav class="menu">
-            <a class="burger" href="#">
-                <i class="fa fa-bars"></i>
-            </a>
-            <ul class="navbar">
-                <li class="navbar-item"><a href="#education">MY EDUCATION</a></li>
-                <li class="navbar-item"><a href="#code">MY CODE</a></li>
-                <li class="navbar-item"><a href="#skills">MY SKILLS</a></li>
-                <li class="navbar-item"><a href="#projects">MY PROJECTS</a></li>
-                <li class="navbar-item"><a href="#languages">LANGUAGES</a></li>
-            </ul>
-        </nav>
-        <main id="container">
-            <div class="left">
-                <aside class="left-top">
-                    <div id="my-photo">
-                        <img src="photo.jpg"
-                        alt="A photo of Anna Artemenko" 
-                        id="avatar">
-                    </div>
-                </aside>
-                <div class="left-bottom">
-                    <div>
-                        <h1>Anna Artemenko</h1>
-                        <h3 id="contacts">CONTACT ME</h3>
-                            <ul class="icons-sum">
-                                <li class="contact-information">
-                                    <a class="icons" href="https://t.me/anyacubed" target="_blank">
-                                        <i class="fa fa-telegram fa-2x"></i>
-                                    </a>
-                                </li>
-                                <li class="contact-information">
-                                    <a class="icons" href="https://linkedin.com/in/anna-artemenko-967b7b1b7" target="_blank">
-                                        <i class="fa fa-linkedin fa-2x"></i>
-                                    </a>
-                                </li>
-                                <li class="contact-information">  
-                                    <a class="icons" href="https://github.com/anyacubed" target="_blank">
-                                        <i class="fa fa-github fa-2x"></i>
-                                    </a>
-                                </li>
-                                <li class="contact-information">
-                                    <a class="icons" href="mailto:neverbackdown@gmail.com" target="_blank">
-                                        <i class="fa fa-envelope fa-2x"></i>
-                                    </a>
-                                </li>
-                            </ul>
-                    </div>
-                    <div>
-                        <h2 id="skills">SKILLS</h2>
-                            <ul class="skills-languages">
-                                <li><b>HTML/CSS</b></li>
-                                <li><b>JS</b></li>
-                                <li><b>Git</b></li>
-                                <li><b>Markdown</b></li>
-                            </ul>
-                    </div>
-                    <div>
-                        <h2 id="languages">LANGUAGES</h2>
-                            <ul class="skills-languages">
-                                <li><b>English (B1)</b></li>
-                                <li><b>French (B1)</b></li>
-                                <li><b>Spanish (A1)</b></li>
-                                <li><b>Russian (native)</b></li>
-                            </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="right">
-                <section class="box1">
-                    <h2>ABOUT ME</h2>
-                    <p id="about-me">I’m a junior frontend developer. I’m super enthusiastic about learning new things in computer science because it makes me feel challenging. After years of learning foreign languages, I made a conclusion that there is not anything really special about them when you don’t use them daily, therefore I decided to master something more applied. So, just in case I feel like becoming Hokage one day, tell Elon Musk to watch out! </p>
-                </section>
-                <hr>
-                <section>
-                    <h2 id="education">EDUCATION</h2>
-                <ul class="education">
-                    <li>
-                        <h3>2017 – 2021 | MSLU</h3>
-                        <p>The faculty of roman languages</p>
-                    </li>
-                    <li>
-                        <h3>2021 | freeCodeCamp</h3>
-                        <p>Responsive Web Design</p>
-                        <p>JavaScript Algorithms and Data Structures</p>
-                    </li>
-                    <li>
-                        <h4>OTHER ACTIVITIES</h4>
-                        <h3>2019 | Minsk European Games Organizing Committee</h3>
-                        <p>International volunteering</p>
-                    </li>
-                </ul>
-                </section>
-                <hr>
-                <section>
-                    <h2 id="code">CODE</h2>
-                    <pre class="code"><code class="js">function highAndLow(numbers) {
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+    <title>rss cv</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="highlight/styles/atom-one-dark-reasonable.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alegreya+Sans">
+    <script src="/highlight/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <nav class="menu">
+      <a class="burger" href="#">
+        <i class="fa fa-bars"></i>
+      </a>
+      <ul class="navbar">
+        <li class="navbar-item"><a href="#education">MY EDUCATION</a></li>
+        <li class="navbar-item"><a href="#code">MY CODE</a></li>
+        <li class="navbar-item"><a href="#skills">MY SKILLS</a></li>
+        <li class="navbar-item"><a href="#projects">MY PROJECTS</a></li>
+        <li class="navbar-item"><a href="#languages">LANGUAGES</a></li>
+      </ul>
+    </nav>
+    <main id="container">
+      <div class="left">
+        <aside class="left-top">
+          <div id="my-photo">
+            <img src="assets/photo.jpg" alt="A photo of Anna Artemenko" id="avatar">
+          </div>
+        </aside>
+        <div class="left-bottom">
+          <div>
+            <h1>Anna Artemenko</h1>
+            <h3 id="contacts">CONTACT ME</h3>
+              <ul class="icons-sum">
+                <li class="contact-information">
+                  <a class="icons" href="https://t.me/anyacubed" target="_blank">
+                    <i class="fa fa-telegram fa-2x"></i>
+                  </a>
+                </li>
+                <li class="contact-information">
+                  <a class="icons" href="https://linkedin.com/in/anna-artemenko-967b7b1b7" target="_blank">
+                    <i class="fa fa-linkedin fa-2x"></i>
+                  </a>
+                </li>
+                <li class="contact-information">  
+                  <a class="icons" href="https://github.com/anyacubed" target="_blank">
+                    <i class="fa fa-github fa-2x"></i>
+                  </a>
+                </li>
+                <li class="contact-information">
+                  <a class="icons" href="mailto:neverbackdown@gmail.com" target="_blank">
+                    <i class="fa fa-envelope fa-2x"></i>
+                  </a>
+                </li>
+              </ul>
+        </div>
+          <div>
+            <h2 id="skills">SKILLS</h2>
+              <ul class="skills-languages">
+                <li><b>HTML/CSS</b></li>
+                <li><b>JS</b></li>
+                <li><b>Git</b></li>
+                <li><b>Markdown</b></li>
+              </ul>
+          </div>
+          <div>
+            <h2 id="languages">LANGUAGES</h2>
+              <ul class="skills-languages">
+                <li><b>English (B1)</b></li>
+                <li><b>French (B1)</b></li>
+                <li><b>Spanish (A1)</b></li>
+                <li><b>Russian (native)</b></li>
+              </ul>
+          </div>
+        </div>
+      </div>
+      <div class="right">
+        <section class="box1">
+          <h2>ABOUT ME</h2>
+          <p id="about-me">I’m a junior frontend developer. I’m super enthusiastic about learning new things in computer science because it makes me feel challenging. After years of learning foreign languages, I made a conclusion that there is not anything really special about them when you don’t use them daily, therefore I decided to master something more applied. So, just in case I feel like becoming Hokage one day, tell Elon Musk to watch out! </p>
+        </section>
+        <hr>
+        <section>
+            <h2 id="education">EDUCATION</h2>
+        <ul class="education">
+          <li>
+            <h3>2017 – 2021 | MSLU</h3>
+            <p>The faculty of roman languages</p>
+          </li>
+          <li>
+            <h3>2021 | freeCodeCamp</h3>
+            <p>Responsive Web Design</p>
+            <p>JavaScript Algorithms and Data Structures</p>
+          </li>
+          <li>
+            <h4>OTHER ACTIVITIES</h4>
+            <h3>2019 | Minsk European Games Organizing Committee</h3>
+            <p>International volunteering</p>
+          </li>
+        </ul>
+        </section>
+        <hr>
+        <section>
+          <h2 id="code">CODE</h2>
+          <pre class="code"><code class="js">function highAndLow(numbers) {
 var array = numbers.split(" ");
 array = array.map(Number);
 var a = Math.max(...array);
 var b = Math.min(...array);
 return `${a} ${b}`;
 }
-                    </code></pre>
-                </section>
-                <hr>
-                <section class="box4">
-                    <h2 id="projects">PROJECTS</h2>
-                    <h3>MY CV</h3>
-                    <p>A short written summary of my qualifications and education with the use of HTML, CSS and JS</p>
-                    <div class="cv-project-container">
-                        <a href="https://anyacubed-cv.netlify.app/" target="_blank"><img src="cv-project.png" class="cv-project" alt="my cv project"></a>
-                    </div>
-                </section>
-            </div>
-        </main>
-        <footer class="footer-box">
-            <div class="footer-box-item"></div>
-            <div class="footer-box-item">
-                <h5 id="footer-box-item2">© 2021 Anna Artemenko</h5>
-            </div>
-            <div class="footer-box-item">
-                <ul class="icons-sum">
-                    <li class="contact-information">  
-                        <a class="icons" href="https://github.com/anyacubed" target="_blank">
-                            <i class="fa fa-github fa-2x"></i>
-                        </a>
-                    </li>
-                    <li class="contact-information">
-                        <a class="icons" href="https://linkedin.com/in/anna-artemenko-967b7b1b7" target="_blank">
-                            <i class="fa fa-linkedin fa-2x"></i>
-                        </a>
-                    </li>
-                    <li class="contact-information">
-                        <a class="icons" href="mailto:neverbackdown@gmail.com" target="_blank">
-                            <i class="fa fa-envelope fa-2x"></i>
-                        </a>
-                    </li>
-                    <li class="contact-information">
-                        <a href="https://rs.school/js/" target="_blank">
-                            <img src="logo.svg" width="60" alt="The Rolling Scopes School's logo">
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </footer>
-    </body>
+          </code></pre>
+        </section>
+        <hr>
+        <section class="box4">
+          <h2 id="projects">PROJECTS</h2>
+          <h3>MOMENTUM</h3>
+          <p>All-in-one productivity tool featuring to-do, weather, and inspiration with the use of HTML, CSS and JS</p>
+          <div class="projects-container">
+            <a href="https://rolling-scopes-school.github.io/anyacubed-JSFE2021Q3/momentum/" target="_blank"><img src="assets/momentum-project.png" class="project-item" alt="my momentum project"></a>
+          </div>
+          <h3>MUSEUM</h3>
+          <p>Louvre landing page with the use of HTML, CSS and JS</p>
+          <div class="">
+            <a href="https://rolling-scopes-school.github.io/anyacubed-JSFE2021Q3/museum/" target="_blank"><img src="assets/museum-project.png" class="project-item" alt="my museum project"></a>
+          </div>
+          <h3>CSS MEME SLIDER</h3>
+          <p>Slider only with the use of HTML and CSS</p>
+          <div>
+            <a href="https://anyacubed.github.io/cssMemSlider/cssMemSlider/index.html" target="_blank"><img src="assets/meme-slider-project.png" class="project-item" alt="my css-meme-slider project"></a>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer class="footer-box">
+      <div class="footer-box-item"></div>
+      <div class="footer-box-item">
+        <h5 id="footer-box-item2">© 2021 Anna Artemenko</h5>
+      </div>
+      <div class="footer-box-item">
+        <ul class="icons-sum">
+          <li class="contact-information">  
+            <a class="icons" href="https://github.com/anyacubed" target="_blank">
+              <i class="fa fa-github fa-2x"></i>
+            </a>
+          </li>
+          <li class="contact-information">
+            <a class="icons" href="https://linkedin.com/in/anna-artemenko-967b7b1b7" target="_blank">
+              <i class="fa fa-linkedin fa-2x"></i>
+            </a>
+          </li>
+          <li class="contact-information">
+            <a class="icons" href="mailto:neverbackdown@gmail.com" target="_blank">
+              <i class="fa fa-envelope fa-2x"></i>
+            </a>
+          </li>
+          <li class="contact-information">
+            <a href="https://rs.school/js/" target="_blank">
+              <img class="logo" src="assets/logo.svg" width="60" alt="The Rolling Scopes School's logo">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
 </html>
