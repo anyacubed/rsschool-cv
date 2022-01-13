@@ -37,10 +37,6 @@ a:hover {
   color: rgb(86, 74, 100);
 }
 
-a:hover li {
-
-}
-
 .logo:hover {
   filter: invert(29%) sepia(25%) saturate(492%) hue-rotate(225deg) brightness(91%) contrast(87%);
 }
